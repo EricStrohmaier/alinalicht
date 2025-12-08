@@ -19,13 +19,18 @@ export function AlbumCoverCard({
     <section
       className={cn(
         "relative w-full max-w-sm select-none",
-        "rounded-3xl border-2 border-white/50 backdrop-blur-xl bg-primary/20",
-        "shadow-button overflow-hidden",
+        "rounded-3xl border-2 backdrop-blur-xl border-white/50 bg-primary/20",
+        "overflow-hidden shadow-button",
         className
       )}
     >
-      <Link href={href} target="_blank" rel="noopener noreferrer" className="group block">
-        <div className="relative aspect-square w-full">
+      <Link
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block group"
+      >
+        <div className="relative w-full aspect-square">
           <Image
             src={imgSrc}
             alt={title}
@@ -34,11 +39,13 @@ export function AlbumCoverCard({
             className="object-cover"
             priority
           />
-          <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-black/50 to-transparent" />
+          <div className="absolute inset-0 to-transparent opacity-0 transition-opacity duration-300 pointer-events-none group-hover:opacity-100 bg-linear-to-t from-black/50" />
         </div>
-        <div className="flex items-center justify-between p-4">
-          <h3 className="text-base md:text-lg font-semibold text-foreground">{title}</h3>
-          <span className="text-sm md:text-base text-foreground/80">Listen →</span>
+        <div className="flex justify-between items-center p-4">
+          <h3 className="text-base font-semibold md:text-lg text-white/60">
+            {title}
+          </h3>
+          <span className="text-sm md:text-base text-white/60">Listen →</span>
         </div>
       </Link>
     </section>

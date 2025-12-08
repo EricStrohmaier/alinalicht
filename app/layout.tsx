@@ -33,27 +33,11 @@ export const metadata: Metadata = {
     description: "Alina Licht - Music Producer",
     url: "https://alinalicht.com",
     siteName: "Alina Licht",
-    images: [
-      {
-        url: "https://alinalicht.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Alina Licht",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Alina Licht",
     description: "Alina Licht - Music Producer",
-    images: [
-      {
-        url: "https://alinalicht.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Alina Licht",
-      },
-    ],
   },
   itunes: {
     appId: "1691736862",

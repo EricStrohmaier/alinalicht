@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import { cn } from "@/lib/utils";
 
 export default function SocialIcon(props: {
   title: string;
@@ -15,13 +13,9 @@ export default function SocialIcon(props: {
         rel="noreferrer"
         aria-label={props.title}
         title={props.title}
-        className={cn(
-          buttonVariants({ size: "icon-xl" }),
-          // make border less prominent than default
-          "border-white/30 hover:border-white/20"
-        )}
+        className="size-10 opacity-50 hover:opacity-80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-colors-and-shadows duration-300 ease-out focus-visible:outline-none focus-visible:border-border/15 focus-visible:ring-1 focus-visible:ring-primary/70 focus-visible:ring-offset-4 focus-visible:ring-offset-foreground/20 focus-visible:shadow-button-hover disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-6 [&_svg]:shrink-0 disabled:cursor-not-allowed"
       >
-        <img src={props.img} alt={props.title} className="invert size-6" />
+        <img src={props.img} alt={props.title} className="invert size-8" />
       </Link>
     </div>
   );
