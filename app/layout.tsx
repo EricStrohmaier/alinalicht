@@ -26,18 +26,21 @@ export const metadata: Metadata = {
     template: "%s | Alina Licht",
     default: "Alina Licht",
   },
-  description: "Alina Licht - Music Producer",
+  description:
+    "Alina Licht - Music Producer for movies, TV shows, and commercials",
   generator: "ericstrohmaier.com",
   openGraph: {
     title: "Alina Licht",
-    description: "Alina Licht - Music Producer",
+    description:
+      "Alina Licht - Music Producer for movies, TV shows, and commercials",
     url: "https://alinalicht.com",
     siteName: "Alina Licht",
   },
   twitter: {
     card: "summary_large_image",
     title: "Alina Licht",
-    description: "Alina Licht - Music Producer",
+    description:
+      "Alina Licht - Music Producer for movies, TV shows, and commercials",
   },
   itunes: {
     appId: "1691736862",

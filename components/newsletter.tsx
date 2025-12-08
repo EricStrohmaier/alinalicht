@@ -39,7 +39,7 @@ export const Newsletter = () => {
 
   return (
     <div className="flex relative flex-col gap-4 justify-center items-center w-full short:lg:pt-10 pb-footer-safe-area 2xl:pt-footer-safe-area short:lg:gap-4 lg:gap-8">
-      <div className="flex flex-col items-center min-h-0 shrink">
+      <div className="flex flex-col w-full max-w-sm min-h-0 shrink">
         {!isOpen && (
           <motion.div
             key="newsletter"

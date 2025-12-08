@@ -12,7 +12,7 @@ export function SpotifyEmbeds({
   const artistSrc = `https://open.spotify.com/embed/artist/${artistId}?utm_source=generator&theme=0`;
 
   return (
-    <section className={cn("w-full max-w-2xl", className)}>
+    <section className={cn("w-full", className)}>
       <div className="px-2 mb-2">
         <h3 className="text-base font-semibold md:text-lg text-white/60">
           Listen on Spotify

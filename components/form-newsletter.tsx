@@ -115,7 +115,7 @@ export const FormNewsletter = ({
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="relative pt-10 mx-auto w-full max-w-2xl lg:pt-12"
+        className="relative pt-10 w-full lg:pt-12"
       >
         <SubmissionStateMessage
           value={submissionState}

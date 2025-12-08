@@ -18,7 +18,7 @@ export default function Home() {
             imgSrc="/img/nobody.jpg"
             className="w-full max-w-md"
           />
-          <div className="flex flex-col gap-5 w-full max-w-2xl">
+          <div className="flex flex-col gap-5 w-full">
             <SpotifyEmbeds />
             <Newsletter />
           </div>
