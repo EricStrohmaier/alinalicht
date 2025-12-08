@@ -8,9 +8,9 @@ export const size = {
 export const contentType = "image/png";
 
 export default function OpengraphImage() {
-  const background = "http://localhost:3000/palmred.png";
-  const titleImage = "http://localhost:3000/alina-licht-text-white.png";
-  const coverImage = "http://localhost:3000/img/nobody.jpg";
+  const background = "https://alinalicht.com/palmred.png";
+  const titleImage = "https://alinalicht.com/alina-licht-text-white.png";
+  const coverImage = "https://alinalicht.com/img/nobody.jpg";
 
   return new ImageResponse(
     (
