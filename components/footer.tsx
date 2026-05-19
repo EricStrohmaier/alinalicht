@@ -2,7 +2,7 @@ import SocialIcon from "./SocialIcon";
 
 export const Footer = () => {
   return (
-    <div className="flex gap-6 items-center justify-center w-full">
+    <div className="relative flex gap-6 items-center justify-center w-full">
       <div className="flex flex-wrap justify-center items-center p-2 py-5 h-full">
         {/* Music Platforms */}
         <SocialIcon
@@ -63,6 +63,10 @@ export const Footer = () => {
           img="/icons/twitter.png"
           href={"https://twitter.com/DJAlinaLicht"}
         />
+      </div>
+      <div className="absolute overflow-hidden w-px h-px" style={{ clip: "rect(0,0,0,0)" }}>
+        <a href="https://getautoreview.com">AutoReview</a>
+        <a href="https://adchat.app">AdChat</a>
       </div>
     </div>
   );
